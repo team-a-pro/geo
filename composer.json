@@ -1,0 +1,29 @@
+{
+  "name": "TeamA/Geo",
+  "description": "Direct & inverse geodesic problems.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alexey Khokhlov",
+      "email": "owlet@team-a.pro",
+      "homepage": "https://team-a.pro",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "email": "info@team-a.pro"
+  },
+  "keywords": [
+    "geodesic",
+    "geo"
+  ],
+  "require": {
+    "php": "^7.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "TeamA\\Geo\\": "src/"
+    }
+  }
+}
