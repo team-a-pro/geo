@@ -1,9 +1,13 @@
 # geo
 Direct &amp; inverse geodesic problems.
 
+## Requirements
+
+- php >= 7.1
+
 ## Install via Composer
 
-`composer require team-a/geo:1.0.0`
+`composer require team-a/geo:^1.0.0`
 
 ## Examples
 
