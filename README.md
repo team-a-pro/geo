@@ -1,6 +1,8 @@
 # geo
 Direct &amp; inverse geodesic problems.
 
+The library uses a simple spherical model, not a geoid or even an ellipsoid. The error here will be about 0.06% at full Meridian and about 0.1% at half equator. On smaller segments the error is much smaller and practically suitable for tasks similar to logistics.
+
 ## Requirements
 
 - php >= 7.1
@@ -12,8 +14,8 @@ Direct &amp; inverse geodesic problems.
 ## Examples
 
 ```php
-$Tver      = new TeamA\Point(56.8598, 35.8948);
-$SouthPole = new TeamA\Point(-90.0, 0);
+$Tver      = TeamA\Point::create(56.8598, 35.8948);
+$SouthPole = TeamA\Point::create(-90.0, 0);
 
 $distance = (
     new TeamA\Line($Tver, $SouthPole)
