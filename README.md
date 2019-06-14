@@ -14,16 +14,20 @@ The library uses a simple spherical model, not a geoid or even an ellipsoid. The
 ## Examples
 
 ```php
-$Tver      = TeamA\Point::create(56.8598, 35.8948);
-$SouthPole = TeamA\Point::create(-90.0, 0);
+<?php
+
+use TeamA\Geo;
+
+$Tver      = Geo\Point::create(56.8598, 35.8948);
+$SouthPole = Geo\Point::create(-90.0, 0);
 
 $distance = (
-    new TeamA\Line($Tver, $SouthPole)
+    new Geo\Line($Tver, $SouthPole)
 )
     ->getDistance()
 ;
 
-$point2ToSouthPoleLine = TeamA\Line::createByBearing($Tver, 90.0, 1000.0);
+$point2ToSouthPoleLine = Geo\Line::createByBearing($Tver, 90.0, 1000.0);
 
 $initialBearingToSouthPole = $point2ToSouthPoleLine->getInitialBearing();
 $finalBearingToSouthPole   = $point2ToSouthPoleLine->getFinalBearing();
