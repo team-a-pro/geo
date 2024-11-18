@@ -5,7 +5,7 @@ The library uses a simple spherical model, not a geoid or even an ellipsoid. The
 
 ## Requirements
 
-- php >= ^7.1 || 8.0^
+- php >= ^7.1 || ^8.0
 
 ## Install via Composer
 
